@@ -18,16 +18,16 @@ const uploadByLink = async(req, res) => {
         const {link} = req.body;
 
         const uploadsFolder = path.join(__dirname, '..', 'uploads/');
-        // console.log(uploadsFolder);
+        console.log(uploadsFolder);
 
         const newName = Date.now()+".jpg";
 
-        options = {
-            url: link,
-            dest: uploadsFolder + newName,     // will be saved to uploads folder
-          };
+        // options = {
+        //     url: link,
+        //     dest: uploadsFolder + newName,     // will be saved to uploads folder
+        //   };
           
-        await imageDownloader.image(options);
+        // await imageDownloader.image(options);
         
         return res.json(newName);
     }
