@@ -17,7 +17,7 @@ import SearchContextProvider from './context/SearchContext';
 
 // axios.defaults.baseURL = "http://127.0.0.1:5000";
 
-axios.defaults.baseURL = "https://airbnb-hd8f.onrender.com:5000";
+axios.defaults.baseURL = "https://airbnb-hd8f.onrender.com";
 axios.defaults.withCredentials = true;
 
 function App() {
