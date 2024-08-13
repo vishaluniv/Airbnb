@@ -6,7 +6,7 @@ const PlaceImg = ({place, index=0}) => {
     }
 
     return(
-            <img className="object-cover" src={"http://localhost:5000/uploads/"+place.photos[index]} alt={place.title}/> 
+            <img className="object-cover" src={"https://airbnb-hd8f.onrender.com/uploads/"+place.photos[index]} alt={place.title}/> 
     );
 }
 

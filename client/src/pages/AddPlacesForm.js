@@ -212,7 +212,7 @@ const AddPlacesForm = () => {
                     {state.addedPhotos.length > 0 && state.addedPhotos.map((link, index) => {
                         return(
                             <div className="h-32 flex relative" key={index} >
-                                <img className="rounded-2xl w-full object-cover position-center" src={`http://localhost:5000/uploads/${link}`} alt=""/>
+                                <img className="rounded-2xl w-full object-cover position-center" src={`https://airbnb-hd8f.onrender.com/uploads/${link}`} alt=""/>
                                 <FontAwesomeIcon className="absolute bottom-1 right-1 text-white cursor-pointer bg-black bg-opacity-50 rounded-xl p-2" onClick={() => removePhoto(link)} icon={faTrashCan} />
                                 {
                                     link === state.addedPhotos[0] 
