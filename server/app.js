@@ -7,7 +7,7 @@ const app = express();
 
 async function connectToMongoDB() {
     
-    try {
+  try {
       const db = await mongoose.connect(
             'mongodb+srv://deepali4843be21:jPwf4GKRXGxYAUiV@cluster0.zzg5loc.mongodb.net/myFirstDatabase',
         {
@@ -36,7 +36,7 @@ app.use("/uploads", express.static(__dirname+"/uploads")); // For getting images
 
 app.use(cors({
     credentials:true,
-    origin:'https://airbnb-1-bpw0.onrender.com' 
+    origin:'https://airbnb-1-bpw0.onrender.com:3000' 
 }));
 
 
