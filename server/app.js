@@ -36,7 +36,7 @@ app.use("/uploads", express.static(__dirname+"/uploads")); // For getting images
 
 app.use(cors({
     credentials:true,
-    origin:'http://localhost:3000'
+    origin:'http://localhost:3000'||'https://airbnb-1-bpw0.onrender.com'
 }));
 
 
@@ -47,8 +47,6 @@ const bookingRoutes = require("./routes/bookingRoutes");
 app.use("/", userAuthRoutes);
 app.use("/", placeRoutes);
 app.use("/",bookingRoutes);
-
-
 
 
 app.listen(process.env.PORT || 5000, () => {
